@@ -1,14 +1,109 @@
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <title>📝 Coaching: Contact Form</title>
-    <script async src="https://tally.so/widgets/embed.js"></script>
-    <style type="text/css">
-      html { margin: 0; height: 100%; overflow: hidden; }
-      iframe { position: absolute; top: 0; right: 0; bottom: 0; left: 0; border: 0; }
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Génesis Collective</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #000000;
+            font-family: 'Cinzel Decorative', serif;
+            color: white;
+            padding: 20px;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .button-link {
+            display: inline-block;
+            padding: 15px 25px;
+            margin: 10px 0;
+            font-size: 16px;
+            color: white;
+            background-color: #333;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: background-color 0.3s;
+        }
+
+        .button-link:hover {
+            background-color: slategray;
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 14px;
+            background-color: #333;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        @media (min-width: 768px) {
+            body {
+                padding: 40px;
+            }
+
+            .button-link {
+                padding: 15px 30px;
+                font-size: 18px;
+            }
+        }
     </style>
-  </head>
-  <body>
-    <iframe data-tally-src="https://tally.so/r/wzz6Dk" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="📝 Coaching: Contact Form"></iframe>
-  </body>
+</head>
+<body>
+    <div class="container">
+        <h1>Génesis</h1>
+        <h2>Powerlifting & Strength</h2>
+
+        <br><br>
+
+        <p>Si quieres formar parte de este proyecto:</p>
+        <a href="form.html" class="button-link">📝 Formulario de contacto</a>
+
+        <p>Si ya formas parte y quieres gestionar tu suscripción:</p>
+        <a href="https://billing.stripe.com/p/login/3cs4kfboAa4UbjadQQ" class="button-link">🔒 Accede a tu cuenta</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Genesis Collective</p>
+    </footer>
+</body>
 </html>
